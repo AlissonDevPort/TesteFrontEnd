@@ -15,7 +15,7 @@ export const Container = styled.div`
   }
 `;
 
-export const PokemonCard = styled.div`
+export const PokemonCard = styled.div<{ isModalOpen: boolean }>`
   background-color: white;
   border-radius: 8px;
   padding: 1rem;
@@ -28,7 +28,7 @@ export const PokemonCard = styled.div`
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: ${(props) => props.ismodalopen ? "none" : "scale(1.05)"};
+    transform: ${(props) => props.isModalOpen ? "none" : "scale(1.05)"};
   }
   @media (max-width: 600px) {
     width: 240px;

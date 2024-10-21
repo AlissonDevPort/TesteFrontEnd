@@ -34,7 +34,7 @@ const PokeList = (props: any) => {
           <PokemonCard
             key={index}
             onClick={() => selectPokemon(pokemon.name)}
-            ismodalopen={isModalVisible}
+            isModalOpen={isModalVisible}
           >
             {isFavorite(getPokemonId(pokemon.url)) ? (
               <PokeFavorited>
